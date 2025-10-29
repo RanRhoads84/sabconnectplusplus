@@ -1,3 +1,10 @@
+// Browser API compatibility layer
+if (typeof browser !== 'undefined' && !window.chrome) {
+    window.chrome = browser;
+} else if (typeof chrome !== 'undefined' && !window.browser) {
+    window.browser = chrome;
+}
+
 String.prototype.trim = function(){return this.replace(/^\s+|\s+$/g, '');};
 
 chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {

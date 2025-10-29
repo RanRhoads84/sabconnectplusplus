@@ -1,3 +1,10 @@
+// Browser API compatibility layer
+if (typeof browser !== 'undefined' && !window.chrome) {
+    window.chrome = browser;
+} else if (typeof chrome !== 'undefined' && !window.browser) {
+    window.browser = chrome;
+}
+
 // profiles will be initialized by the calling page
 var profiles = null;
 var StoreClass = StoreSync;

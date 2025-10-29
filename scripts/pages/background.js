@@ -1,3 +1,10 @@
+// Browser API compatibility layer
+if (typeof browser !== 'undefined' && !window.chrome) {
+    window.chrome = browser;
+} else if (typeof chrome !== 'undefined' && !window.browser) {
+    window.browser = chrome;
+}
+
 // List of sites that send the X-DNZB-Category HTTP header
 //var category_header_sites = ['nzbs.org', 'newzbin2.es', 'newzxxx.com'];
 var category_header_sites = [];

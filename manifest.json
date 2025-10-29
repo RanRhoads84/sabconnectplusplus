@@ -2,8 +2,14 @@
 	"manifest_version": 3,
 	"name": "SABconnect++",
 	"version": "2.0.0",
-	"description": "SABnzbd extension for Google Chrome.",
+	"description": "SABnzbd extension for browsers.",
 	"minimum_chrome_version": "88.0",
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "sabconnectplusplus@extension.org",
+			"strict_min_version": "109.0"
+		}
+	},
 	"background": {
 		"service_worker": "scripts/background-sw.js"
 	},
