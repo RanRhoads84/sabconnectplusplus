@@ -8,9 +8,21 @@ SABconnect++ adds one-click 'Send to SABnzbd' buttons to many popular NZB index 
 
 You also get a taskbar button that allows you to keep an eye on your SABnzbd: current downloads, pause (individual downloads, or pause all), or remove individual queued downloads.
 
+## Installation
+
+### Chrome
 Install SABconnect++ at our [Chrome Web Store page](https://chrome.google.com/webstore/detail/okphadhbbjadcifjplhifajfacbkkbod).
 
-Features:
+### Firefox
+To install on Firefox (version 109 or later):
+1. Download the extension files from this repository
+2. Open Firefox and navigate to `about:debugging#/runtime/this-firefox`
+3. Click "Load Temporary Add-on"
+4. Navigate to the extension directory and select the `manifest.json` file
+
+**Note:** For permanent installation, the extension needs to be packaged and signed by Mozilla or installed as a developer extension.
+
+## Features
 
   * One-click NZB downloads for the following sites:
     * binsearch.info (binsearch.net)
