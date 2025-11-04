@@ -1,5 +1,15 @@
 // Background Service Worker for SABconnect++
 // Manifest V3 compatible
+// Cross-browser compatible (Chrome & Firefox)
+
+// Browser API compatibility layer
+if (typeof browser !== 'undefined' && !self.chrome) {
+    // Firefox - use browser API
+    self.chrome = browser;
+} else if (typeof chrome !== 'undefined' && !self.browser) {
+    // Chrome - create browser alias
+    self.browser = chrome;
+}
 
 // Simplified store implementation for service worker
 class ServiceWorkerStore {

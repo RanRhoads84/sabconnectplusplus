@@ -1,3 +1,10 @@
+// Browser API compatibility layer
+if (typeof browser !== 'undefined' && !window.chrome) {
+    window.chrome = browser;
+} else if (typeof chrome !== 'undefined' && !window.browser) {
+    window.browser = chrome;
+}
+
 function AddLinkResult( result, data )
 {
 	switch( result.ret )
